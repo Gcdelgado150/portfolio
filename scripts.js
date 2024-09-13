@@ -3,22 +3,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     skillBars.forEach(bar => {
         const percentage = bar.getAttribute('data-percentage');
-        bar.querySelector('::after').style.width = percentage + '%';
+        bar.style.setProperty('--bar-width', percentage + '%');
     });
 
-    // Optional: Smooth scrolling for navigation
-    document.querySelectorAll('nav a').forEach(anchor => {
+    // Smooth scrolling for navigation
+    const anchors = document.querySelectorAll('nav a');
+    
+    anchors.forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetId = this.getAttribute('href');
+            
+            // Ensure the target ID is valid
+            if (targetId && targetId.startsWith('#')) {
+                e.preventDefault();
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else {
+                    console.warn(`No element found for ID ${targetId}`);
+                }
+            }
         });
-    });
-
-    // Optional: Form submission (can be replaced with actual logic)
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Thank you for your message!');
     });
 });
