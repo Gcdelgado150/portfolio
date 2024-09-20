@@ -153,3 +153,49 @@ footer {
 .social-links a:hover {
     color: #0073b1; /* Change color on hover if desired */
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .col_title_text {
+        margin-right: 0; /* Remove margin for mobile */
+        align-items: center; /* Center items */
+    }
+
+    .sf-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 15px; /* Space between menu items */
+    }
+
+    .sf-menu li {
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .button_solid_color_2 a {
+        width: 100%; /* Make buttons full width */
+        text-align: center; /* Center text in button */
+    }
+
+    .social-links {
+        flex-direction: column; /* Stack social links vertically */
+        gap: 20px; /* Space between links */
+    }
+
+    .social-links a {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-title {
+        font-size: 14px; /* Smaller footer title */
+    }
+
+    .footer-rights {
+        font-size: 10px; /* Smaller footer rights */
+    }
+}
