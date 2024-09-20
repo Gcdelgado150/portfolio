@@ -53,3 +53,27 @@ skills.forEach(skill => {
         skill.style.transform = 'translateY(0) rotate(0)';
     });
 });
+
+
+/*Project list*/
+let currentIndex = 0;
+
+function navigate(direction) {
+    const projects = document.querySelectorAll('.project');
+    const totalProjects = projects.length;
+
+    // Update current index
+    currentIndex += direction;
+
+    // Loop around if out of bounds
+    if (currentIndex < 0) {
+        currentIndex = totalProjects - 1; // Go to last project
+    } else if (currentIndex >= totalProjects) {
+        currentIndex = 0; // Go to first project
+    }
+
+    // Update transform property to show the current project
+    const container = document.querySelector('.project-container');
+    const offset = currentIndex * -100; // Move left by 100% for each index
+    container.style.transform = `translateX(${offset}%)`;
+}
