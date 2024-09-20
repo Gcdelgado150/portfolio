@@ -1,76 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+
+.text-content {
+    display: flex; /* Stack text vertically */
+    flex-direction: column; /* Stack elements vertically */
+    text-align: left; /* Align text to the left */
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+#about {
     padding: 20px;
-    text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
 }
 
-header p {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.skill-bar {
-    position: relative;
-    background-color: #ddd;
-    border-radius: 5px;
-    height: 30px;
-    margin: 10px 0;
-}
-
-.skill-bar::before {
-    content: attr(data-skill);
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #333;
-}
-
-.skill-bar::after {
-    content: "";
-    display: block;
-    height: 100%;
-    background: #4caf50;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: var(--bar-width);
-    transition: width 0.5s;
+.about-image {
+    width: 190px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: to round the corners */
 }
 
 .project {
@@ -100,31 +47,4 @@ form button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-footer p {
-    margin: 0;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-links a {
-    font-size: 2rem;
-    color: #000; /* Adjust color as needed */
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #0073b1; /* Change color on hover if desired */
 }

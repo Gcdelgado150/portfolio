@@ -5,27 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Guilherme C. Delgado</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    
     <header>
-        <h1>Guilherme C. Delgado</h1>
-        <p>Data Analytics | Data Enginneering | Deep Learning | Python | SQL | PySpark</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container">
+            <div class="row">
+                <div class="col_title_text">
+                    <h1>Guilherme C. Delgado</h1>
+                    <p>
+                        <span class="tooltip" data-tooltip="Analyzing data to inform decisions">Data Analytics</span> | 
+                        <span class="tooltip" data-tooltip="Building systems for data processing">Data Engineering</span> | 
+                        <span class="tooltip" data-tooltip="Training models to predict outcomes">Deep Learning</span> | 
+                        <span class="tooltip" data-tooltip="Programming language for data manipulation">Python</span> | 
+                        <span class="tooltip" data-tooltip="Structured Query Language for database management">SQL</span> | 
+                        <span class="tooltip" data-tooltip="Apache Spark's Python API for big data">PySpark</span>
+                    </p>
+                </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Passionate Data Engineer with experience in designing and implementing data solutions...</p>
-    </section>
+                <div class="col_menu_main">
+                    <ul class="sf-menu">
+                        <li id="menu-item-16232" class="menu-item link_item">
+                            <a href="index.html"><span class="menu-title-text">Home</span></a></li>
+                        <li id="menu-item-16233" class="menu-item link_item">
+                            <a href="about.html"><span class="menu-title-text">About</span></a></li>
+                        <li id="menu-item-16234" class="menu-item link_item">
+                            <a href="skills.html"><span class="menu-title-text">Skills</span></a></li>
+                        <li id="menu-item-16235" class="menu-item link_item">
+                            <a href="certifications.html"><span class="menu-title-text">Certifications</span></a></li>
+                        <li id="menu-item-16236" class="menu-item link_item">
+                            <a href="projects.html"><span class="menu-title-text">Projects</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col_menu_hireme">
+                    <ul class="sf-menu">
+                        <li id="menu-item-16237" class="menu-item button_solid_color_2">
+                            <a href="index.html"><span class="menu-title-text">Hire me</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <img src="images/images.jpeg" alt="Data Engineer" class="about-image"> 
+                <h2>About Me</h2> 
+                <p>Sou um Engenheiro de Dados Sênior com ampla experiência em Python, especializado na 
+                    criação de soluções robustas e escaláveis que transformam dados brutos em insights valiosos. 
+                    Minha expertise abrange arquitetura de dados e engenharia de dados, com ênfase em metodologias 
+                    como a arquitetura Medallion, que garantem a eficiência e a qualidade dos dados ao longo de todo o ciclo de vida.
+                    Com um forte foco em análise de dados e aprendizado de máquina, utilizo técnicas como modelagem 
+                    preditiva, análise exploratória de dados (EDA) e visualização interativa para extrair informações 
+                    significativas. Sou proficiente em processos de ETL, desenvolvendo pipelines eficientes que garantem 
+                    a extração, transformação e carga de dados de diversas fontes, permitindo que as organizações 
+                    maximizem o valor de seus ativos de dados.
+                    Minha abordagem é sempre colaborativa, trabalhando em estreita parceria com equipes multifuncionais 
+                    para alavancar a inovação. Estou constantemente em busca de novos desafios que me permitam aplicar 
+                    minha paixão por tecnologia e resolver problemas complexos no universo dos dados.</p>
+            </div>
+            
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 Guilherme C. Delgado. All rights reserved.</p>
