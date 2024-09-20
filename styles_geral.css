@@ -178,19 +178,6 @@ header{
     margin-right: 0; /* Remove margin from the last item */
 }
 
-/* Button styling */
-.button_solid_color_2 a {
-    background-color: #007bff; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 15px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Transition for hover effect */
-}
-
-.button_solid_color_2 a:hover {
-    background-color: #0056b3; /* Darken button on hover */
-}
-
 /*Skill styling*/
 .container-skills {
     flex: 1;
