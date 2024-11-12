@@ -478,7 +478,6 @@ footer {
     color: #0073b1; /* Change color on hover if desired */
 }
 
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .row {
