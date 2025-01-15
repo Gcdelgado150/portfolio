@@ -165,3 +165,11 @@ document.getElementById('pt-btn').addEventListener('click', function() {
 document.getElementById('en-btn').addEventListener('click', function() {
     document.getElementById('about-content').innerHTML = contentEN;
 });
+
+/*CV Download*/
+document.getElementById('download-button').addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.href = '/home/gcdelgado/Documents/Projects/portfolio/images/cv.pdf';
+    link.download = 'CV_Guilherme_Delgado.pdf';
+    link.click();
+});

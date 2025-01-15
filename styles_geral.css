@@ -408,8 +408,35 @@ header{
 .right {
     right: 0px;
 }
-/* Essential */
 
+/*Curriculum*/
+.download-button {
+    background-color: #000000; /* Black button */
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and the flag icon */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 15px; /* Space between buttons */
+}
+
+.download-button:hover {
+    background-color: #2d6ebd;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.download-button img {
+    width: 30px; /* Set the flag icon width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Essential */
 .ul-features {
     display: table-row;
     list-style: none;

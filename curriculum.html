@@ -44,14 +44,20 @@
         </div>
     </header>
 
-    <main id="intro">
-        <img src="images/me.jpeg" alt="Avatar", width="10%"> 
-        <h2>Welcome to my portfolio!</h2>
-        <p>I'm Guilherme, a technology enthusiast and an expert developer.</p>
-        <a href="https://wa.me/5531991993745" target="_blank" aria-label="WhatsApp">
-            
-            <button class="button-3" role="button"><i class="fab fa-whatsapp"></i> Send me a message</button>
-        </a>
+    <main id="cv">
+        <div class="language-selector">
+            <h1> Check my Curriculum </h1> <br>
+    
+            <button id="download-button-br" class="download-button">
+                Open <img src="images/br.png" alt="Português"/>
+            </button>
+                
+            <button id="download-button-en" class="download-button">
+                Open <img src="images/usa.png" alt="English"/>
+            </button>
+        </div>
+
+    
     </main>
 
     <footer>
@@ -79,6 +85,19 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttonBR = document.getElementById('download-button-br');
+            buttonBR.addEventListener('click', () => {
+                window.open('images/cv.pdf', '_blank'); // Open Portuguese curriculum
+            });
+
+            const buttonEN = document.getElementById('download-button-en');
+            buttonEN.addEventListener('click', () => {
+                window.open('images/cv_en.pdf', '_blank'); // Open English curriculum
+            });
+        });
+    </script>
 </body>
 </html>
 
